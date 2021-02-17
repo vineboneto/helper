@@ -1,4 +1,8 @@
-> **Help**
+**Help**
+
+[Leia-me](./readme.md)
+
+### Configs
 
 - [Biblioteca](./learning/lib.md)
 - [Sobre Mongo](./db/mongodb.md)
