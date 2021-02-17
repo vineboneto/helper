@@ -1,6 +1,6 @@
-# Bibliotecas
+**Bibliotecas**
 
-> **yarn**
+### yarn
 
 - Gerência pacotes
 
@@ -8,7 +8,7 @@
 $ yarn init -y
 ```
 
-> **git-commit-msg-linter**
+### git-commit-msg-linter
 
 - Evita commits realizados com a formatação errada
 - Commits devem ser realizados seguindo a seguinte formatação
@@ -19,12 +19,12 @@ $ yarn init -y
 $ yarn add git-commit-msg-linter -D
 ```
 
-> **eslint**
+### eslint
 
 - Verifica se o seu código está seguindo a formatação convencional e mais utilizada pelo js/ts
 - Typescript precisa de muitos plugins para conseguir instalar o eslint. Acesse [aqui](https://github.com/standard/eslint-config-standard-with-typescript).
 
-> **husky**
+### husky
 
 - Invalida tentativas de commit que não seguem as regras estabelecidas pelo eslint
 
@@ -32,9 +32,9 @@ $ yarn add git-commit-msg-linter -D
 $ yarn add husky -D
 ```
 
-# Configurações de Bibliotecas
+**Configurações de Bibliotecas**
 
-> **typescript**
+### typescript
 
 - As configurações de compilação do typescript são armazenadas em um arquivo `.tsconfig.json`
 
@@ -56,7 +56,7 @@ $ yarn add husky -D
 - **esModuleInterop:** converter módulos para commonjs
 - **allowJs:** Se possuir arquivos de configuração no formato de javascript ao invés de json, incluirá no dist
 
-> **eslint**
+### eslint
 
 - As configurações do eslint são armazenadas em um arquivo `.eslintrc.json`
 
