@@ -1,48 +1,49 @@
 ### Comandos básicos
 
 ```bash
-help
-cls
-show dbs
-use wm
-show dbs
-db.createCollection('estados')
-show dbs
-show collections
-db.createCollection('Estados')
-show collections
-db.Estados.drop()
-show collections
-db.estados.drop()
-show collections
-show dbs
+$ help
+$ cls
+$ show dbs
+$ use wm
+$ show dbs
+$ db.createCollection('estados')
+$ show dbs
+$ show collections
+$ db.createCollection('Estados')
+$ show collections
+$ db.Estados.drop()
+$ show collections
+$ db.estados.drop()
+$ show collections
+$ show dbs
 ```
 
 ### Consultas
 
 ```bash
-db.estados.find()
-db.estados.find().pretty()
-db.estados.findOne()
-db.estados.findOne({sigla: "RJ"})
-db.estados.find({$or: [{sigla: "RJ"}, {sigla: "AC"}]}).pretty()
-db.estados.find({populacao: {$exists: true}}).pretty()
-db.estados.find().skip(1).limit(2)
-db.estados.count()
-db.estados.find({sigla: "SP"}, {nome: 1, sigla: 1, _id: 0})
-db.estados.find({sigla: "SP"}, {"cidades.nome": 1, _id: 0})
 
-db.estados.aggregate([
+$ db.estados.find()
+$ db.estados.find().pretty()
+$  db.estados.findOne()
+$ db.estados.findOne({sigla: "RJ"})
+$ db.estados.find({$or: [{sigla: "RJ"}, {sigla: "AC"}]}).pretty()
+$ db.estados.find({populacao: {$exists: true}}).pretty()
+$ db.estados.find().skip(1).limit(2)
+$ db.estados.count()
+$ db.estados.find({sigla: "SP"}, {nome: 1, sigla: 1, _id: 0})
+$ db.estados.find({sigla: "SP"}, {"cidades.nome": 1, _id: 0})
+
+$ db.estados.aggregate([
     { $project: {nome: 1, "cidades.nome": 1, _id: 0} }
 ])
 
-db.estados.aggregate([
+$ db.estados.aggregate([
     { $project: {populacao: {$sum: "$cidades.populacao"}, sigla: 1, _id: 0 } },
     { $group: {_id: null, populacaoTotal: {$sum: "$populacao" } } },
     { $project: {_id: 0, populacaoTotal: 1 } },
 ])
 
-db.estados.aggregate([
+$ db.estados.aggregate([
     { $match: {"cidades.nome": "Sorocaba"} },
     { $unwind: "$cidades"},
     { $match: {"cidades.nome": "Sorocaba"} },
@@ -53,7 +54,7 @@ db.estados.aggregate([
 ### Consultas Lookup
 
 ```bash
-db.empresas.aggregate([
+$ db.empresas.aggregate([
     {$match: {nome: "Bradesco"}},
     {$lookup: {
         from: "estados",
@@ -68,9 +69,9 @@ db.empresas.aggregate([
 ### Inserção
 
 ```bash
-db.estados.insert({nome: "Acre", sigla: "AC", regiao: "Norte"})
-db.estados.save({nome: "Alagoas", sigla: "AL", regiao: "Nordeste", populacao: 3322000})
-db.estados.insert({
+$ db.estados.insert({nome: "Acre", sigla: "AC", regiao: "Norte"})
+$ db.estados.save({nome: "Alagoas", sigla: "AL", regiao: "Nordeste", populacao: 3322000})
+$ db.estados.insert({
     nome: "Rio de Janeiro",
     sigla: "RJ",
     regiao: "Sudeste",
@@ -81,9 +82,9 @@ db.estados.insert({
     }]
 })
 
-db.estados.find()
-db.estados.find().pretty()
-db.help()
+$ db.estados.find()
+$ db.estados.find().pretty()
+$ db.help()
 ```
 
 ### Remoção
@@ -119,3 +120,12 @@ db.estados.update(
 db.estados.find({populacao: {$exists: true}}, {_id: 0, nome: 1})bash
 
 ```
+
+### MongoDb Altas
+
+- Crie uma conta em Mongo Altas
+- Crie um novo cluster
+- Adicione um usuário
+- Adicione um Ip de acesso
+- Crie as collections e o db
+- Copie a url do banco em produção em `your_app`
