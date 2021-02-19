@@ -73,4 +73,7 @@ $ docker run -it <your_image> sh
 
 # Executa uma imagem em uma determinada porta
 $ docker run -p 5000:5000 <your_image>
+
+# Executa docker compose
+$ docker-compose up || docker-compose up -d
 ```
