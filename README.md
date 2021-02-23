@@ -4,7 +4,7 @@ Scripts e informações importantes para me auxiliar em configurações de frame
 
 ### Visualização
 
-- Baixe a extensão MarkdownViewer [aqui](https://chrome.google.com/webstore/detail/markdown-viewer)
+- Baixe a extensão MarkdownViewer [aqui](https://chrome.google.com/webstore/detail/markdown-viewer/ckkdlimhmcjmikdlpkmbgfkaikojcbjk)
 - Habilite a permissão para arquivos locais em `Advanced Options`
 - Execute na raíz da pasta em seu terminal
 
