@@ -1,4 +1,4 @@
-### Help
+### Helper
 
 Scripts e informações importantes para me auxiliar em configurações de frameworks, bibliotecas, apps entre outros
 
