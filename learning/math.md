@@ -14,7 +14,7 @@ $T:$ período $s$<br/>
 
 
 ## Para github
-![fórmula](https://render.githubusercontent.com/render/math?math=T = \frac{1}{f} \rightarrow f = \frac{1}{T} \\)
+<img src="https://render.githubusercontent.com/render/math?math=T = \frac{1}{f} \rightarrow f = \frac{1}{T} \\" />
 
 ## Suporte Símbolos Latex
 
