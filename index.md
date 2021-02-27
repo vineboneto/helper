@@ -1,5 +1,4 @@
 **Help**
-
 [Leia-me](./readme.md)
 
 ### Configs
@@ -11,3 +10,4 @@
 - [TDD](./learning/tdd.md)
 - [Heroku](./learning/heroku.md)
 - [Docker](./learning/docker.md)
+- [Equações em Markdown](./learning/math.md)
