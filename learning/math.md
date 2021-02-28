@@ -28,7 +28,3 @@ $T:$ período $s$<br/>
 [Overleaf](https://pt.overleaf.com/learn/latex/List_of_Greek_letters_and_math_symbols) <br/>
 [csrgxtu](https://csrgxtu.github.io/2015/03/20/Writing-Mathematic-Fomulars-in-Markdown/)
 [codecogs](https://www.codecogs.com/latex/eqneditor.php)
-
-<script type="text/javascript" async
-
-src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
