@@ -4,7 +4,7 @@
 
  - Baixar extensão [Markdown All In One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
 
-## Exemplos
+## Para Vscode 
 
 $$
   T = \frac{1}{f} \rightarrow f = \frac{1}{T}\\
