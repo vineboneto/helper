@@ -26,5 +26,5 @@ $T:$ período $s$<br/>
 ## Suporte Símbolos Latex
 
 [Overleaf](https://pt.overleaf.com/learn/latex/List_of_Greek_letters_and_math_symbols) <br/>
-[csrgxtu](https://csrgxtu.github.io/2015/03/20/Writing-Mathematic-Fomulars-in-Markdown/)
+[csrgxtu](https://csrgxtu.github.io/2015/03/20/Writing-Mathematic-Fomulars-in-Markdown/) <br/>
 [codecogs](https://www.codecogs.com/latex/eqneditor.php)
