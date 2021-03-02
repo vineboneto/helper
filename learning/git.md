@@ -25,6 +25,12 @@
   ## Listar branch locais
   $ git branch
 
+  ## Deletar branch local
+  $ git branch -D <your_branch>
+
+  ## Deletar branch remotamente
+  $ git push <origin> <your_branch> --delete
+
   ## listar conexões remotas do seu repositório
   $ git remote -v
 
