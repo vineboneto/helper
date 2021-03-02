@@ -11,3 +11,4 @@
 - [Heroku](./learning/heroku.md)
 - [Docker](./learning/docker.md)
 - [Equações em Markdown](./learning/math.md)
+- [Sobre git](./learning/git.md)
